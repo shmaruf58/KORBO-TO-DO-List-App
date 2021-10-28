@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Required Social Preview MetaTags -->
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="KORBO | TO-DO List App">
+    <meta name="description"
+        content="KORBO is a very simple To Do List App built using Pure Java and xml. KORBO is built to list your works easily, which you need to be done. It will make your life super easy! Made With ♥ by Sh Maruf">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="App">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="KORBO | TO-DO List App">
+    <meta property="og:description"
+        content="KORBO is a very simple To Do List App built using Pure Java and xml. KORBO is built to list your works easily, which you need to be done. It will make your life super easy! Made With ♥ by sh_maruf">
+    <meta property="og:image" content="preview.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="">
+    <meta property="twitter:title" content="KORBO | TO-DO List App">
+    <meta property="twitter:description"
+        content="KORBO is a very simple To Do List web app built using Pure JavaScript. KORBO is built to list your works easily, which you need to be done. It will make your life super easy! Made With ♥ by Sh Maruf">
+    <meta property="twitter:image" content="preview.jpg">
+
+    <!-- End of Required Social Preview MetaTags -->
+
+   
+
+    <!-- Montserrat Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- LINE AWESOME CDN -->
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+    <!-- Main CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>KORBO | TO-DO List App</title>
+</head>
+
+<body onload="tasker.construct();">
+    <!-- Main Section Which Will Contain Everything -->
+    <h1>KORBO</h1>
+
+    <!-- AlertBox -->
+    <div class="alert">
+        <p>⚠ Please add a task first!</p>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <div class="form-container">
+            <div class="add-form">
+                <input id="input" type="text" placeholder="Type your To-Do works...">
+                <button type="submit" id="submit">ADD</button>
+            </div>
+        </div>
+        <div class="head">
+            <div class="date">
+                <p>00:00:00</p>
+            </div>
+            <div class="add">
+                <svg width="2rem" height="2rem" viewBox="0 0 16 16" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                    <path fill-rule="evenodd"
+                        d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                </svg>
+            </div>
+            <div class="time">
+                <p>00:00:00</p>
+            </div>
+        </div>
+        <div class="pad">
+            <div class="placeholder">
+                <h4>Click on the + icon to add a new task.</h4>
+            </div>
+            <div id="todo">
+                <ul id="tasksContainer">
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer>
+        <p>Made With Pure love , HardWork, Lots of Failure, Depression, Sadness, Bugs and Errors by <a
+                href="#" target="_blank">Sh Maruf</a>.
+            <br>
+            Give a Star On <a href="#" target="_blank">This Project</a> and follow
+            me on <a href="https://www.instagram.com/_shmaruf_/" target="_blank">Instagram</a>.
+        </p>
+        <br>
+       
+        <br>
+        <p>Copyright <a href="https://www.fiverr.com/sh_maruf"> Sh Maruf </a> | 2021</p>
+    </footer>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <script src="app.js"></script>
+</body>
+
+</html>
